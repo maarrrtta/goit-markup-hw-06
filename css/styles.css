@@ -531,6 +531,7 @@ display: flex;
         letter-spacing: 0.42px;
         text-transform: uppercase;
         font-weight: 700;
+        font-size: 14px;
 }
 
 .email-display-footer {
@@ -759,13 +760,15 @@ display: flex;
     padding: 10px 0 4px 0;
 }
 
-.label-focus:focus,
-.label-focus:hover {
-border: 1px solid var(--brand-color-logo);
-border-radius: 4px;
-transition-duration: var(--default-time);
-    transition-timing-function: var(--default-timing-function);
-    fill: var(--brand-color-logo);
+.label-part:focus,
+.label-part-comment:focus {
+    border-radius: 4px;
+        border: 1px solid var(--brand-color-logo);
+        outline: none;
+}
+
+.label-part:focus + svg {
+    fill: var(--brand-color-logo)
 }
 
 .label-wrapper {
@@ -812,7 +815,7 @@ transition-duration: var(--default-time);
     line-height: 24px;
         letter-spacing: 0.42px;
         color: var(--brand-color-description);
-        padding: 25px 0 34px 0;
+        padding-top: 25px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -840,6 +843,7 @@ transition-duration: var(--default-time);
 .modal-submit-display {
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 }
 
 .modal-submit {
