@@ -414,14 +414,13 @@
           </svg>
         </button>
 
-        
+        <div class="modal-display">
         <p class="modal-text"> Zostaw swoje dane w formularzu poniżej</p>
         <form>
-          <div class="modal-display">
 
 <label> <div class="modal-form-name">Imię </br> </div>
   <div class="label-wrapper">
-<input class="label-part" type="text" name="name" />
+<input class="label-part" type="text" name="name" required />
 <svg width="18" height="18">
             <use href="./images/icons.svg#icon-person-modal"></use>
           </svg>
@@ -430,7 +429,7 @@
 
 <label> <div class="modal-form-name">Telefon </br></div>
   <div class="label-wrapper">
-<input class="label-part" type="phone-number" name="number" />
+<input class="label-part" type="phone-number" name="number" required />
 <svg width="18" height="18">
             <use href="./images/icons.svg#icon-phone-modal"></use>
           </svg>
@@ -439,7 +438,7 @@
 
 <label> <div class="modal-form-name">E-mail </br></div>
   <div class="label-wrapper">
-<input class="label-part" type="email" name="email" />
+<input class="label-part" type="email" name="email" required />
 <svg width="18" height="18">
             <use href="./images/icons.svg#icon-email-modal"></use>
           </svg>
@@ -449,13 +448,12 @@
 <label>
     <div class="modal-form-name modal-form-name-position">Komentarz</div>
     <div class="label-focus">
-    <textarea class="label-part-comment" name="feedback" rows="5" placeholder="Wprowadź tekst"></textarea>
+    <textarea class="label-part-comment" name="feedback" rows="5" placeholder="Wprowadź tekst" required></textarea>
 </div>
   </label>
-  </div>
 
   <label class="modal-checkbox">
-    <input type="checkbox" name="regulations"/>
+    <input type="checkbox" name="regulations" required/>
     <div class="modal-checkbox-text">Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę Prywatności.</a></div>
   </label>
   
@@ -463,6 +461,7 @@
   <button class="modal-submit" type="submit">Wyślij </div></button>
   </div>
 </form>
+</div>
 
       </div>
     </div>
