@@ -295,6 +295,10 @@ box-sizing: border-box;
     overflow: hidden;
 }
 
+.third-section-pictures img {
+    vertical-align: bottom;
+}
+
 .third-section-pictures li > .third-section-text {
     position: absolute;
     width: 100%;
